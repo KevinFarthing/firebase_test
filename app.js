@@ -18,5 +18,3 @@ $.get(url, data => {
 console.log(ApplelastPrice, Appleopen, Appleclose, GooglelastPrice, Googleopen, Googleclose, NOGlastPrice, NOGopen, NOGclose);
     });
 
-
-
