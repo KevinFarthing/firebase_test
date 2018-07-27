@@ -35,8 +35,10 @@ function weatherGet() {
         }).done(function (weather) {
             if(units == "imperial") {
                 var tempNotation = "°F";
+                var speedNotation = "f/s";
             } else {
                 var tempNotation = "°C";
+                var speedNotation = "m/s";
             }
             var city = weather.name;
             var description = weather.weather[0].description;
@@ -44,7 +46,7 @@ function weatherGet() {
             var highTemp = Math.round(weather.main.temp_max);
             var currentTemp = Math.round(weather.main.temp);
             var windSpeed = weather.wind.speed;
-            var html = `<ul><li>${city}</li><li>Weather is: ${description}</li><li>Low Temp: ${lowTemp+tempNotation}</li><li>High Temp: ${highTemp+tempNotation}</li><li>Temp: ${currentTemp+tempNotation}</li><li>Windspeed: ${windSpeed} f/s</li></ul>`;
+            var html = `<ul><li>${city}</li><li>Weather is: ${description}</li><li>Low Temp: ${lowTemp+tempNotation}</li><li>High Temp: ${highTemp+tempNotation}</li><li>Temp: ${currentTemp+tempNotation}</li><li>Windspeed: ${windSpeed+" "+speedNotation}</li></ul>`;
             $('#openWeatherMap').html(html);
             // console.log(weather)
         })
