@@ -52,6 +52,11 @@ function weatherGet() {
     
 }
 
+$(document).ready(function () {
+    weatherGet();
+    // stockGet();
+})
+
 $("#impOrMet").change(function () {
     units = this.value;
     weatherGet();
