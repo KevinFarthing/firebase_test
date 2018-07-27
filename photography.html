@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Firebase Shit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+</head>
+
+<body>
+    <form>
+        <div class="form-inline">
+            <label class="sr-only" for="">Name</label>
+            <input type="file" class="form-control" id="imageUpload">
+            <br>
+            <input type="text" class="form-control" id="photographerName" placeholder="Name of Photographer">
+            <br>
+            <input type="text" class="form-control" id="modelName" placeholder="Model Name">
+            <br>
+            <input type="text" class="form-control" id="cameraType" placeholder="Camera Model & Brand">
+            <br>
+            <button id="photoSubmit" type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div id="photoDiv"></div>
+    </form>
+
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
