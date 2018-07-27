@@ -1,7 +1,7 @@
 var config = {
     apiKey: "AIzaSyDjjxmTSePqUavKuLuWmZc-K_tKukvI_Uw",
     // authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://github.com/KevinFarthing/firebase_test.git" //,
+    databaseURL: "https://dailyblog-131f8.firebaseio.com/" //,
     // projectId: "<PROJECT_ID>",
     // storageBucket: "<BUCKET>.appspot.com",
     // messagingSenderId: "<SENDER_ID>",
